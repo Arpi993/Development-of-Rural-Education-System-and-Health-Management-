@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <link href="Design.css" rel="stylesheet" />    
+</head>
+<body>
+    <nav class="background">
+        <ul class="nav_list">
+            <li><a href="#login">Log In</a></li>
+            <li><a href="#Register">Register as Tutor</a></li>
+            <li><a href="#BMI">BMI Status</a></li>
+            <li><a href="#Observation">Observation</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <button class="nav_list" oneclick="openForm()">Log In</button>   
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="form-section">
+ 
+        <!-- login form -->
+        <div class="login-box">
+            <input type="email"
+                   class="email ele"
+                   placeholder="youremail@email.com">
+            <input type="password"
+                   class="password ele"
+                   placeholder="password">
+            <button class="clkbtn">Login</button>
+        </div>
+
+        <!-- signup form -->
+        <div class="signup-box">
+            <input type="text"
+                   class="name ele"
+                   placeholder="Enter your name">
+            <input type="email"
+                   class="email ele"
+                   placeholder="youremail@email.com">
+            <input type="password"
+                   class="password ele"
+                   placeholder="password">
+            <input type="password"
+                   class="password ele"
+                   placeholder="Confirm password">
+            <button class="clkbtn">Signup</button>
+        </div>
+    </div> 
+    <script src="page.js"></script>
+</body>
+</html>
